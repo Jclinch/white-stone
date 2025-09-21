@@ -3,6 +3,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+// import { desc } from "framer-motion/client";
 import { Landmark, Building2, Banknote, Bitcoin } from "lucide-react";
 
 export default function Industries() {
@@ -10,18 +11,22 @@ export default function Industries() {
     {
       name: "Fintechs",
       icon: Landmark,
+      desc: "Seamless integration of money movement & compliance.",
     },
     {
       name: "Enterprises",
       icon: Building2,
+      desc: "Corporate treasury, global payroll, and cross-border vendor payments.",
     },
     {
       name: "Banks & Correspondent Institutions",
       icon: Banknote,
+      desc: "Partnering on MSB FBO accounts.",
     },
     {
       name: "Crypto Businesses",
       icon: Bitcoin,
+      desc: "Fiat settlement, regulatory onboarding, and MSB licensing support.",
     },
   ];
 
@@ -33,7 +38,7 @@ export default function Industries() {
           Industries
         </h2>
         <h3 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2">
-          Serving Diverse Industries
+          Custom Solutions for Regulated Ecosystems
         </h3>
 
         {/* Industry Cards */}
@@ -57,6 +62,9 @@ export default function Industries() {
                 <h4 className="text-lg font-semibold text-slate-800">
                   {item.name}
                 </h4>
+                <div className="text-sm font-semibold text-slate-600 pt-2">
+                  {item.desc}
+                </div>
               </motion.div>
             );
           })}

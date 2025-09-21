@@ -1,9 +1,9 @@
 // File: components/Contact.tsx
 // -----------------------------
-'use client';
+"use client";
 
-import { Mail } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
@@ -15,11 +15,18 @@ export default function Contact() {
         </h2>
 
         <h3 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mt-2">
-          Get in Touch
+          Let’s Build the Future of Payments Together.
         </h3>
 
         <p className="mt-4 text-lg text-slate-600 max-w-xl mx-auto">
-          Have questions or want to collaborate? Reach out to us directly via email.
+          Partner with White Stone Corp to unlock secure, compliant, and
+          innovative money movement.
+          <br />
+        </p>
+
+        {/* Email Label */}
+        <p className="mt-6 text-lg font-semibold text-slate-700">
+          compliance@whitestonecorp.xyz
         </p>
 
         {/* Large Email Icon */}
@@ -36,10 +43,8 @@ export default function Contact() {
         >
           <Mail size={56} />
         </motion.a>
-
-        {/* Email Label */}
-        <p className="mt-6 text-lg font-semibold text-slate-700">
-          compliance@whitestonecorp.xyz
+        <p className="mt-2 text-lg font-semibold text-slate-700">
+          📍 Registered Office: 1001 S Main St, Suite 500, Kalispell, MT 59901
         </p>
       </div>
     </section>

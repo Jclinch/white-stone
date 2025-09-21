@@ -8,10 +8,12 @@ import Industries from "../components/Industries";
 import Compliance from "../components/Compliance";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import SeoMeta from "@/components/seo/SeoMeta";
 
 export default function Page() {
   return (
     <main className="min-h-screen overflow-hidden">
+      <SeoMeta />
       <Hero />
       <About />
       <Services />

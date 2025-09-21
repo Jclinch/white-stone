@@ -83,10 +83,8 @@
 //   );
 // }
 
-
-
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -99,16 +97,16 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl px-6">
+      <div className="relative z-10 text-center max-w-6xl px-6">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl lg:text-7xl font-extrabold text-white leading-tight"
+          className="text-3xl lg:text-5xl font-extrabold text-white leading-tight"
         >
-          Powering the Future of{" "}
+          Powering the Future of <br />
           <span className="bg-gradient-to-r from-yellow-300 to-cyan-400 bg-clip-text text-transparent">
-            Global Payments
+            Global Payments and Embedded Finance
           </span>
         </motion.h1>
         <motion.p
@@ -117,7 +115,9 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
           className="mt-6 text-lg text-slate-100"
         >
-          Compliant, scalable, and innovative infrastructure for enterprises worldwide.
+          Secure. Compliant. Future-Ready.
+
+          
         </motion.p>
         <div className="mt-8 flex justify-center gap-4">
           <button className="px-6 py-3 rounded-full fintech-gradient text-white shadow-lg hover:scale-105 transition">

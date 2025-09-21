@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+// Usage notes and recommended images
+// -----------------------------
+// Colors suggested for a tech brand palette:
+// 1. Primary deep-indigo: #0f172a, great for text and footer backgrounds.
+// 2. Accent cerise-magenta: #5b21b6, used for buttons and highlights.
+// 3. Accent teal: #06b6d4, for supporting gradients and calls to action.
+// 4. Soft ice: #eef2ff, for subtle cards and background shapes.
 
-## Getting Started
+// Suggested royalty-free images and icons:
+// - Unsplash: "global payments" or "fintech" search results, e.g. https://images.unsplash.com/photo-1559526324-593bc073d938
+// - Pexels: "international finance" images.
+// - Icons: react-icons (FiMail, FiShield, FiGlobe, FiUsers)
 
-First, run the development server:
+// Performance and scaling suggestions:
+// - Use next/image and set image domains in next.config.js for production.
+// - Offload contact forms to serverless endpoints with rate limiting and CAPTCHA.
+// - Deploy behind a CDN, and use horizontal scaling with load balancer for API servers.
+// - Use incremental static regeneration or server-side caching for SEO-heavy content.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+// Accessibility and SEO notes:
+// - Ensure all images include alt text.
+// - Use semantic sections and headings, H1 only in the hero.
+// - Meta tags and OpenGraph can be added in app/head.tsx for SEO and sharing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+// End of document

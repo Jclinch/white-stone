@@ -1,10 +1,10 @@
 // File: components/Services.tsx
 // -----------------------------
+// File: components/Services.tsx
 'use client';
 import { motion } from 'framer-motion';
 
 export default function Services() {
-  // ✅ Updated services to match the provided structured content
   const services = [
     {
       title: "MSB-Bank Partnership Enablement",
@@ -43,7 +43,6 @@ export default function Services() {
   return (
     <section id="services" className="relative py-24 fintech-glow text-white">
       <div className="container mx-auto px-6 lg:px-10 text-center mb-16">
-        {/* ✅ Updated tagline and headline */}
         <h2 className="text-sm uppercase tracking-widest text-[#ceafff] font-bold">
           Services
         </h2>
@@ -51,7 +50,6 @@ export default function Services() {
           End-to-End Solutions for Banks, Fintechs & Enterprises.
         </h2>
 
-        {/* ✅ Grid rendering the detailed services */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((s, i) => (
             <motion.div
@@ -63,7 +61,8 @@ export default function Services() {
               className="p-6 rounded-2xl bg-white/10 hover:bg-white/20 transition text-left"
             >
               <h3 className="text-xl font-semibold mb-3">{s.title}</h3>
-              <ul className="list-disc list-inside space-y-1 text-sm text-slate-200">
+              {/* ✅ Fixed alignment: use list-outside + padding */}
+              <ul className="list-disc list-outside pl-5 space-y-1 text-sm text-slate-200">
                 {s.desc.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}
